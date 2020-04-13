@@ -5,6 +5,7 @@ Basic implementation of core Computer Science algorithms and data structures wri
 ## Implementations
 * Algorithms
   - Sorting
-    - Bubble Sort
+    - [Bubble Sort](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Sorting/BubbleSort.playground/Contents.swift)
+    - [Insertion Sort](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Sorting/InsertionSort.playground/Contents.swift)
   - Searching
-    - Binary Search
+    - [Binary Search](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Searching/BinarySearch.playground/Contents.swift)
