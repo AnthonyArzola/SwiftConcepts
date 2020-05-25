@@ -1,6 +1,15 @@
 Swift Core Concepts
 ===================
-Basic implementation of core Computer Science algorithms and data structures written in Swift
+Basic implementation of core Computer Science algorithms and data structures written in Swift.
+
+For C# implementation, see [Core Concepts](https://github.com/AnthonyArzola/CoreConcepts)
+
+## Goals
+* Provide implementations to standard algorithms/data structures
+* Include basic tests to verify functionality
+* Write clean and straightforward code with helpful comments
+* No dependency on third-party libraries
+
 
 ## Implementations
 * Algorithms
