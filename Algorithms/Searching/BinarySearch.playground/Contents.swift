@@ -1,12 +1,13 @@
-// Perform binary search on array
-func binarySearch(array: [Int], value: Int) -> Int {
+/// Perform binary search on array
+public func binarySearch(array: [Int], value: Int) -> Int {
     guard !array.isEmpty else { return -1 }
     
     print("Search for \(value) within \(array)")
     return recursiveSearch(array: array, leftIndex: 0, rightIndex: array.count - 1, value: value)
 }
 
-func recursiveSearch(array: [Int], leftIndex: Int, rightIndex: Int, value: Int) -> Int {
+/// Recursive method that performs actual search. Takes array, checks mid-point for match. If no match found, searches right if search value is >. Otherwise, searches left.
+private func recursiveSearch(array: [Int], leftIndex: Int, rightIndex: Int, value: Int) -> Int {
     print("Left index: \(leftIndex), right index: \(rightIndex)")
     if leftIndex <= rightIndex {
         // Determine array mid-point
@@ -36,6 +37,8 @@ numbers.sort()
 
 var index = binarySearch(array: numbers, value: 1003)
 print("Searching for 1003 found at index \(index)\n")
+assert(index != -1)
 
 index = binarySearch(array: numbers, value: 22)
 print("Searching for 22 found at index \(index)\n")
+assert(index == -1)
