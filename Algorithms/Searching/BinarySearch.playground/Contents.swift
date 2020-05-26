@@ -1,5 +1,7 @@
+typealias Index = Int
+
 /// Perform binary search on array
-public func binarySearch(array: [Int], value: Int) -> Int {
+func binarySearch(array: [Int], value: Int) -> Index {
     guard !array.isEmpty else { return -1 }
     
     print("Search for \(value) within \(array)")
@@ -8,7 +10,7 @@ public func binarySearch(array: [Int], value: Int) -> Int {
 
 /// Recursive method that performs search. Takes array, checks mid-point for match.
 /// If no match found, searches right if search value is >. Otherwise, searches left.
-private func recursiveSearch(array: [Int], leftIndex: Int, rightIndex: Int, value: Int) -> Int {
+func recursiveSearch(array: [Int], leftIndex: Index, rightIndex: Index, value: Int) -> Index {
     guard leftIndex <= rightIndex else {
         print("⚠️ Left index \(leftIndex) >= \(rightIndex) right index. Return -1 since we couldn't find a match.")
         return -1
