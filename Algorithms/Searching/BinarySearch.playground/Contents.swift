@@ -3,7 +3,7 @@ public func binarySearch(array: [Int], value: Int) -> Int {
     guard !array.isEmpty else { return -1 }
     
     print("Search for \(value) within \(array)")
-    return recursiveSearch(array: array, leftIndex: 0, rightIndex: array.count - 1, value: value)
+    return recursiveSearch(array: array, leftIndex: array.startIndex, rightIndex: array.endIndex, value: value)
 }
 
 /// Recursive method that performs search. Takes array, checks mid-point for match.
