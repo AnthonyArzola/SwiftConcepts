@@ -1,4 +1,9 @@
-/// Perform in-place sort
+/** Perform in-place sort.
+On each pass
+ * Compare current item to right neighbor and swap if current item is larger than neighbor.
+ * Repeat for remaining array items
+Perform subsequent passes until no swaps are performed.
+*/
 func bubbleSort(array: inout [Int]) {
 
     var continueChecking = true
