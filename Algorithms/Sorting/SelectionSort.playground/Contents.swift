@@ -13,17 +13,18 @@ func selectionSort(array: inout [Int]) {
         while index < array.count {
             if array[index] < array[smallestValueIndex] {
                 // Found smaller value
-                print("Found smallest value: \(array[smallestValueIndex])")
+                print("Smallest value so far: \(array[index])")
                 smallestValueIndex = index
             }
             index += 1
         }
 
         // Swap smallest value with last known unsorted index
-        print("Swap 🔄 1st unsorted \(array[unsortedIndex]) with smallest value of \(array[smallestValueIndex])")
+        print("Swap 🔄 1st unsorted value of \(array[unsortedIndex]) with smallest value of \(array[smallestValueIndex]) at unsorted index [\(unsortedIndex)]")
         let temp = array[unsortedIndex]
         array[unsortedIndex] = array[smallestValueIndex]
         array[smallestValueIndex] = temp
+        print("Array so far: \(array) \n")
     }
 }
 
