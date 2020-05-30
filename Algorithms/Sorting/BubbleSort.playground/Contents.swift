@@ -25,7 +25,13 @@ func bubbleSort(array: inout [Int]) {
     }
 }
 
-var array = [3, 50, 1000, 88, 77, 4, 1]
+var array = [3, 50, 1000, 88, 77, 4, 1, 33, 1, 1]
+// Create copy and sort it using built-in methods so we can compare results against implementation above
+var sortedCopy = array.sorted()
+
 print("🤖 Array before sorting: \(array)\n")
+
 bubbleSort(array: &array)
 print("🤖 Array after soring: \(array)")
+
+assert(array == sortedCopy)
