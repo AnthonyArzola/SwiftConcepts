@@ -1,7 +1,7 @@
 /// Perform in-place sort.
 /// Sort each element in array as it is encountered - do not revisit sorted elements.
-/// Iterate through array (➡️) and compare current against left values ⬅️).)
-/// If left value is smaller, take out right value and "insert" left value in its place (perform swap).
+/// Iterate through array (➡️) and compare current unsorted value against left sorted values (⬅️)
+/// Shift all smaller values
 func insertionSort(array: inout [Int]) {
     guard !array.isEmpty else { return }
     
@@ -42,7 +42,15 @@ insertionSort(array: &unsortedArray)
 print("🤖 Array after sorting:  \(unsortedArray)")
 
 
+///
 /// AlgoExpert implementation
+///
+
+// Insertion sort overview... "insert" unsorted item into proper location within sorted section
+// 1. Loop through array starting at second item or Index = 1 (Index 0 considered sorted)
+// 2. Use while loop, index starting at sorted section's right boundary and go backwards until:
+//   - index reaches boundary (index = 0) OR current item (unsorted) is < sorted item
+//   - while performing loop...shift values to the RIGHT
 
 func insertionSort(array: inout [Int]) -> [Int] {
     
