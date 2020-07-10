@@ -1,6 +1,6 @@
 /// Perform in-place sort.
 /// Sort each element in array as it is encountered - do not revisit sorted elements.
-/// Iterate through array (➡️) and compare current against left values (⬅️).
+/// Iterate through array (➡️) and compare current against left values ⬅️).)
 /// If left value is smaller, take out right value and "insert" left value in its place (perform swap).
 func insertionSort(array: inout [Int]) {
     guard !array.isEmpty else { return }
@@ -18,7 +18,6 @@ func insertionSort(array: inout [Int]) {
     
     // Start at second element. Single element is considered sorted.
     for unsortedIndex in 1..<array.count {
-        //if unsortedIndex == 0 { print("Single element considered sorted. Skipping it."); continue }
         let currentUnsortedValue = array[unsortedIndex]
         var sortedIndex = unsortedIndex - 1
         
@@ -41,3 +40,32 @@ print("🤖 Array before sorting: \(unsortedArray)")
 
 insertionSort(array: &unsortedArray)
 print("🤖 Array after sorting:  \(unsortedArray)")
+
+
+/// AlgoExpert implementation
+
+func insertionSort(array: inout [Int]) -> [Int] {
+    
+    // Iterate through array once, changing inflection point between sorted & unsorted sections
+    // First element is considered sorted, so we can start @ index 1
+    for unsortedIndex in 1..<array.count {
+        var sortedIndex = unsortedIndex - 1
+        let unsortedValue = array[unsortedIndex] // Hold value until we find location to `insert`
+        
+        // If current sorted item is bigger than unsorted item ...
+        while sortedIndex >= 0 && array[sortedIndex] > unsortedValue {
+            // Shift sorted item to the right
+            array[sortedIndex + 1] = array[sortedIndex]
+            sortedIndex -= 1
+        }
+        
+        // Note: account for last decrement
+        // Insert unsorted value into appropriate location
+        array[sortedIndex + 1] = unsortedValue
+        
+    }
+    
+    return array
+}
+
+
