@@ -28,8 +28,47 @@ func selectionSort(array: inout [Int]) {
     }
 }
 
-var unsortedArray = [3, 11, 2, 3, 10, 0, 55, 7, 1, 77, 7]
-print("🤖 Array before sorting: \(unsortedArray)\n")
+//var unsortedArray = [3, 11, 2, 3, 10, 0, 55, 7, 1, 77, 7]
+//print("🤖 Array before sorting: \(unsortedArray)\n")
+//
+//selectionSort(array: &unsortedArray)
+//print("🤖 Array after sorting: \(unsortedArray)")
 
-selectionSort(array: &unsortedArray)
-print("🤖 Array after sorting: \(unsortedArray)")
+///
+/// AlgoExpert implementation
+///
+
+/// Overview: Selection sort..."select smallest item"
+
+// 1. Loop through unsorted array section and find smallest item (for-loop)
+// 2. Determine smallest value
+// 3. Swap smallest value with last index location in sorted section
+
+func selectionSort2(array: inout [Int]) -> [Int] {
+
+    // Loop through unsorted array section once
+    for unsortedIndex in 0..<array.count {
+        // Find smallest value within unsorted section Ex: [ sorted | unsorted ]
+        var idx = unsortedIndex
+        var smallestValueIndex = unsortedIndex // default
+        while idx < array.count {
+            if array[idx] < array[smallestValueIndex] {
+                // Store smallest value index
+                smallestValueIndex = idx
+            }
+            idx += 1
+        }
+        
+        // Swap smallest value with last index location in sorted section
+        let temp = array[unsortedIndex]
+        array[unsortedIndex] = array[smallestValueIndex]
+        array[smallestValueIndex] = temp
+    }
+    
+    return array
+}
+
+var aeInput1 = [8, 5, 2, 9, 5, 6, 3]
+let sortedArray = selectionSort2(array: &aeInput1)
+print(sortedArray)
+
