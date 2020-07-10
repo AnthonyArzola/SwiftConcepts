@@ -28,11 +28,11 @@ func selectionSort(array: inout [Int]) {
     }
 }
 
-//var unsortedArray = [3, 11, 2, 3, 10, 0, 55, 7, 1, 77, 7]
-//print("🤖 Array before sorting: \(unsortedArray)\n")
-//
-//selectionSort(array: &unsortedArray)
-//print("🤖 Array after sorting: \(unsortedArray)")
+var unsortedArray = [3, 11, 2, 3, 10, 0, 55, 7, 1, 77, 7]
+print("🤖 Array before sorting: \(unsortedArray)\n")
+
+selectionSort(array: &unsortedArray)
+print("🤖 Array after sorting: \(unsortedArray)")
 
 ///
 /// AlgoExpert implementation
