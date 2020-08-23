@@ -17,7 +17,7 @@ For C# implementation, see [Core Concepts](https://github.com/AnthonyArzola/Core
     - [Bubble Sort](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Sorting/BubbleSort.playground/Contents.swift)
     - [Insertion Sort](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Sorting/InsertionSort.playground/Contents.swift)
     - [Selection Sort](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Sorting/SelectionSort.playground/Contents.swift)
-    - Merge Sort (Coming soon!)
+    - [Merge Sort](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Sorting/MergeSort.playground/Contents.swift)
     - Quick Sort (Coming soon!)
   - Searching
     - [Binary Search](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Searching/BinarySearch.playground/Contents.swift)
