@@ -21,3 +21,5 @@ For C# implementation, see [Core Concepts](https://github.com/AnthonyArzola/Core
     - Quick Sort (Coming soon!)
   - Searching
     - [Binary Search](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Searching/BinarySearch.playground/Contents.swift)
+    - Depth First Search (Coming soon!)
+    - Breadth First Search (Coming soon!)
