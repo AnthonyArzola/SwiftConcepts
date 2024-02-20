@@ -26,4 +26,5 @@ For C# implementation, see [Core Concepts](https://github.com/AnthonyArzola/Core
 * Data Structures
   - Linear
     - [Linked List](https://github.com/AnthonyArzola/SwiftConcepts/tree/master/DataStructures/Linear/LinkedList.playground/Contents.swift)
+    - [Doubly Linked List](https://github.com/AnthonyArzola/SwiftConcepts/tree/master/DataStructures/Linear/DoublyLinkedList.playground/Contents.swift)
   - Graphs
