@@ -23,3 +23,7 @@ For C# implementation, see [Core Concepts](https://github.com/AnthonyArzola/Core
     - [Binary Search](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Searching/BinarySearch.playground/Contents.swift)
     - [Depth First Search](https://github.com/AnthonyArzola/SwiftConcepts/blob/master/Algorithms/Searching/DFS.playground/Contents.swift)
     - [Breadth First Search](https://github.com/AnthonyArzola/SwiftConcepts/tree/master/Algorithms/Searching/BFS.playground)
+* Data Structures
+  - Linear
+    - [Linked List](https://github.com/AnthonyArzola/SwiftConcepts/tree/master/DataStructures/Linear/LinkedList.playground/Contents.swift)
+  - Graphs
