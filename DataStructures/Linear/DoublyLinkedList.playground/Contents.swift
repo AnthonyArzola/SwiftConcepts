@@ -17,7 +17,7 @@ extension DoublyLinkedNode: Equatable {
     static func == (lhs: DoublyLinkedNode<T>, rhs: DoublyLinkedNode<T>) -> Bool {
         return lhs.value == rhs.value
         && lhs.nextNode == rhs.nextNode
-        && lhs.previousNode == rhs.nextNode
+        && lhs.previousNode == rhs.previousNode
     }
 }
 
